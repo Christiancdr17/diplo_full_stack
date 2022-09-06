@@ -1,0 +1,69 @@
+git init : (inicializa el repositorio)
+git status : muestra el estado acutal 
+git status -s : tenes una vision mas simplificada de que va a mostrar
+git status --short : es lo mismo que git status -s
+git add archivo.xxx : cargas el archivo para que puedas realziar commit
+git commit -m "menaje que va a ir en la cofirmacion del mismo"
+
+Se puede usar tambien
+
+git commit -am "mensaje o descipcion" : con esta linea evitamos colocar git add carga los archivos listos
+git diff : muestra con mejor detalle que git status muestra los archivos a subir donde esta la modificacion
+git diff --staged : este hace lo mismo pero muestra lo que se va subir al repositorio una ves subido o sea se realizo el commit
+git diff --cached : es lo mismo que --staged
+git rm archivo.xxx : borra o prepara git para el borrado del archivo
+git rm --cached archivo.xxx borra el archivo pero lo guarda en tu escritorio de area de trabajo 
+git mv archivo1 archivo2 : renombra los archivos, se puede usar mv y lo detecta igual git
+git log : muestra el historial de confirmaciones
+git log -p : muestra el historial pero lo muetra con los cambios que se realizaron en los archivos
+git log --stat : te muestra las estadisticas en los cambios
+git log --pretty=full : muestra diferentes visualizaciones de las confirmaciones esta online, full, fuller y short
+
+------------------------------------------------------------
+Tambien se pueden usar =format para ingresar las fechas
+
+
+%H Hash de la confirmación
+%h Hash de la confirmación abreviado
+%T Hash del árbol
+%t Hash del árbol abreviado
+%P Hashes de las confirmaciones padre
+%p Hashes de las confirmaciones padre abreviados
+%an Nombre del autor
+%ae Dirección de correo del autor
+%ad Fecha de autoría (el formato respeta la opción -–date)
+%ar Fecha de autoría, relativa
+%cn Nombre del confirmador
+%ce Dirección de correo del confirmador
+%cd Fecha de confirmación
+%cr Fecha de confirmación, relativa
+%s Asunto
+
+$ git log --pretty=format:"%h - %an, %ar : %s"
+
+--------------------------------------------------------
+
+git log --graph : lo muestra con graficos de linea si tenes ramas las muestra tambien
+
+
+-p  Muestra el parche introducido en cada confirmación.
+--stat  Muestra estadísticas sobre los archivos modificados en cada confirmación.
+--shortstat  Muestra solamente la línea de resumen de la opción --stat.
+--name-only   Muestra la lista de archivos afectados.
+--name-status   Muestra la lista de archivos afectados, indicando además si fueron añadidos, modificados o eliminados.
+--abbrev-commit   Muestra solamente los primeros caracteres de la suma SHA-1, en vez de los 40 caracteres de que se compone.
+--relative-date   Muestra la fecha en formato relativo (por ejemplo, “2 weeks ago” (“hace 2 semanas”)) en lugar del formato completo.
+--graph   Muestra un gráfico ASCII con la historia de ramificaciones y uniones.
+--pretty    Muestra las confirmaciones usando un formato alternativo. Posibles opciones son oneline, short, full, fuller y format (mediante el cual puedes especificar tu propio formato).
+
+-----------------------------------------------------------------------------------
+
+git reset HEAD archivo.xxx : con este comando sacamos un archivo puesto con git add lo sacamos de la lista para confirmar..
+
+git checkout -- archivo.xxx : vuelve el archivo a como estaba antes de ser modificado y si se agrego en git add lo saca pero no lo vulve a donde estaba si se hiso commit
+git remote add origin https://github.com/Christiancdr17/diplo_full_stack.git : agrega el repositorio remoto
+git remote -v : muestra todo los repositorios que hay
+
+git remote add diplo_full https://github.com/Christiancdr17/diplo_full_stack.git : se muestra que se puede cambiar el nombre que hace refencia al repositorio
+git pusch origin master : envias todo al repositorio, si es la primera ves te pide pasword pero el token
+
