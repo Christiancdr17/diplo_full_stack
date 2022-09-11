@@ -58,12 +58,22 @@ git log --graph : lo muestra con graficos de linea si tenes ramas las muestra ta
 
 -----------------------------------------------------------------------------------
 
-git reset HEAD archivo.xxx : con este comando sacamos un archivo puesto con git add lo sacamos de la lista para confirmar..
+git reset HEAD archivo.xxx : con este comando sacamos un archivo puesto con git add lo sacamos de la 
+lista para confirmar..
 
-git checkout -- archivo.xxx : vuelve el archivo a como estaba antes de ser modificado y si se agrego en git add lo saca pero no lo vulve a donde estaba si se hiso commit
-git remote add origin https://github.com/Christiancdr17/diplo_full_stack.git : agrega el repositorio remoto
-git remote -v : muestra todo los repositorios que hay
+git checkout -- archivo.xxx : vuelve el archivo a como estaba antes de ser modificado y si se agrego en 
+git add lo saca pero no lo vulve a donde estaba si se hiso commit git remote add origin 
+https://github.com/Christiancdr17/diplo_full_stack.git : agrega el repositorio remoto git remote -v : 
+muestra todo los repositorios que hay
 
-git remote add diplo_full https://github.com/Christiancdr17/diplo_full_stack.git : se muestra que se puede cambiar el nombre que hace refencia al repositorio
-git pusch origin master : envias todo al repositorio, si es la primera ves te pide pasword pero el token
+git remote add diplo_full https://github.com/Christiancdr17/diplo_full_stack.git : se muestra que se 
+puede cambiar el nombre que hace refencia al repositorio git pusch origin master : envias todo al 
+repositorio, si es la primera ves te pide pasword pero el token
 
+git fetch prueba ; trae todo lo del repositorio prueba (prueba seria el apodo de reemplazo a la direccion web)
+git remote show [nombre-remoto] : obtener ifnormacion del remoto 
+git remote rename [nombre-remoto1] [nombre2] : renombrar remoto
+git remote rm [remoto] : eliminar remoto
+git tag : para ver las etiquetas
+git tag -a [v1.0] -m 'Mi verison' : crear etiqueta anotadas
+git show [etiqueta] : muestra la info de la tag junto con el commit 
