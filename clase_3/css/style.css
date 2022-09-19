@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+        
+    /* color: black;  */
+}
+
+
+a:hover {
+    color: yellow;
+}
+
+
+h1{
+    color: whitesmoke;
+    font-size: 50px;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.encabezado{
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    height: 20vh;
+}
+
+.menu li{
+    display: inline-block;
+    ;
+
+    
+}
+.menu{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+
+menu ul li a {
+    color: black;
+}
+
+.articulo {
+    padding: 1rem 1rem;
+    font-weight: 300;
+    background-color: burlywood;
+}
+
+.articulo_1{
+    padding: 1rem 1rem;
+    background-color: bisque ;
+}
+
+.pie {
+    background-color: black;
+    font-weight: 300;
+    color: rgb(14, 224, 243);
+    padding: 20px 20px 30px 20px;
+    height: 20vh;
+}
+
+.encabezado_rs232{
+    background-image: url("../img/rs232.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    height: 20vh;
+}
+
+.encabezado_rs232 h1{
+    color: black;
+}
+
+.img_footer{
+    width: 50px;
+    height: 50px;
+}
+
+footer ol il{
+    margin: 10px;
+}
+/*  */
