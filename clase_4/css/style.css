@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap');/* Trabajo realizado como practica inicial Desarrolador Front End Devolopers
+Profesora: Yanet Riarte
+Tutor asistente: Matias Gimenez
+Alumno: Christian Ruiz 
+Septiembre 2022*//* Poner a cero todo */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    /* color: black;  */
+}
+
+a:hover {
+    color: yellow;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.encabezado {
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    height: 20vh;
+}
+
+.navegacion {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 2rem;
+    background-color: aliceblue;
+}
+
+
+.menu {
+    list-style: none;
+
+}
+
+.menu li {
+    display: inline-block;
+    
+    position:relative;
+    
+}
+
+.sub_doc {
+    position: absolute;
+    display: none;
+}
+
+
+.sub_doc li {
+    display: block;
+}
+
+.menu li:hover ul {
+    display: block;
+} 
+
+
+.articulo {
+    padding: 1rem 1rem;
+    font-weight: 300;
+    background-color: burlywood;
+}
+
+.articulo_1 {
+    padding: 1rem 1rem;
+    background-color: bisque;
+}
+
+.publication {
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 1px red;}.pie {
+    background-color: black;
+    font-weight: 300;
+    color: rgb(14, 224, 243);
+    padding: 20px 20px 30px 20px;
+    height: 20vh;
+    clear: both;
+    /* Para que el footer esta siempre abajo */
+}
+
+.encabezado_rs232 {
+    background-image: url("../img/rs232.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    height: 20vh;
+}
+
+.encabezado_rs232 h1 {
+    color: black;
+}
+
+.img_footer {
+    width: 50px;
+    height: 50px;
+}
+
+footer ol il {
+    margin: 10px;
+}
+
+.img_small {
+    width: 2rem;
+    height: 2rem;
+    display: inline;
+}
+
+/*  */
